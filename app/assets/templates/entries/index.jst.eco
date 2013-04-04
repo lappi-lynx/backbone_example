@@ -1,0 +1,8 @@
+<h1>Backbone</h1>
+
+<form id="new_entry">
+  <input type="text" name="name" id="new_entry_name">
+  <input type="submit" value="Add" id="submit">
+</form>
+
+<ul id="entries"></ul>

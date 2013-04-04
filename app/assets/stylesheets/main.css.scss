@@ -1,0 +1,52 @@
+// Place all the styles related to the main controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+html {
+  background-color: #ddd;
+  font-family: Helvetica;
+}
+
+#container {
+  background-color: #FFF;
+  width: 80%;
+  height: 80%;
+  padding: 50px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  margin: auto;
+}
+
+#container ul li {
+  list-style-type: none;
+  font-size: 1.5em;
+  padding: 15px;
+  border-bottom: 1px solid #333;
+  color: #920c00;
+}
+
+#new_entry {
+  width: 60%;
+  margin: 0 auto;
+}
+
+#new_entry_name {
+  width: 90%;
+  padding: 10px;
+  background-color: #eee;
+}
+
+#submit {
+  background-color: green;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  color: #eee;
+  text-shadow: 0 1px 1px #fff;
+  -webkit-box-shadow: 1px 1px 5px #222;
+          box-shadow: 1px 1px 5px #222;
+  cursor: pointer;
+}
