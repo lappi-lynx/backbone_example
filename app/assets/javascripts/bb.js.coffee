@@ -6,7 +6,7 @@ window.Bb =
 
   initialize: ->
     new Bb.Routers.Entries()
-    Backbone.history.start()
+    Backbone.history.start(pushState: true)
 
 $(document).ready ->
   Bb.initialize()

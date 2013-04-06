@@ -4,6 +4,7 @@ class Bb.Views.EntriesIndex extends Backbone.View
 
   events:
     'submit #new_entry': 'createEntry'
+    'click #draw_winner': 'drawWinner'
 
   initialize: () ->
     @collection.on('reset', @render, this)
@@ -14,9 +15,13 @@ class Bb.Views.EntriesIndex extends Backbone.View
     @collection.each(@appendEntry)
     this
 
-  appendEntry: (entry) ->
+  appendEntry: (entry) =>
     view = new Bb.Views.Entry(model: entry)
-    $('#entries').append(view.render().el)
+    @$('#entries').append(view.render().el)
+
+  drawWinner: (event) ->
+    event.preventDefault()
+    @collection.drawWinner()
 
   createEntry: (event) ->
     event.preventDefault()
